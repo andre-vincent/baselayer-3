@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Getting started · Baselayer CSS</title>
-
+  <title>Commencer · Baselayer CSS</title>
+  <meta name="description" content="Couches CSS modernes de base">
+  
   <link rel="stylesheet" href="/baselayer-3/css/min/baselayer.min.css?v=3.4.6">
 
   <style>
@@ -386,37 +387,38 @@ window.addEventListener("DOMContentLoaded", () => {
 
           <header id="article-title">
             <div class="wrapper-md py-4 t-center t-display">
-              <h1 class="my-4 t-balance t-bold">Getting started with Baselayer</h1>
+              <h1 class="my-4 t-balance t-bold">Premiers pas avec Baselayer</h1>
             </div>
           </header>
         </div>
         <div class="lg:col-4 lg:row-span-3">
           <nav id="toc-outer" class="sticky top w-max-sm h-max-100dvh mx-auto mb-3 px-2 links-underline-hover-only overflow-y">
-            <p class="h4 t-semibold">On this page</p>
+            <p class="h4 t-semibold">Sur cette page</p>
             <nav class="toc" >
-        <ul><li><a href="#introduction">Introduction</a></li><li><a href="#modern-css-technologies">Modern CSS technologies</a></li><li><a href="#baselayer%E2%80%99s-design-philosophy">Baselayer’s design philosophy</a></li><li><a href="#built-using-postcss">Built using PostCSS</a></li><li><a href="#a-modern-css-reset">A modern CSS reset</a></li><li><a href="#baselayer%E2%80%99s-built-in-accessibility-features">Baselayer’s built-in accessibility features</a><ul><li><a href="#(1.)-focus-states">(1.) Focus states</a></li><li><a href="#(2.)-the-visually-hidden-class">(2.) The visually-hidden class</a></li></ul></li></ul>
+        <ul><li><a href="#introduction">Introduction</a></li><li><a href="#modern-css-technologies">Technologies CSS modernes</a></li><li><a href="#baselayer%E2%80%99s-design-philosophy">Baselayer’s design philosophy</a></li><li><a href="#built-using-postcss">Built using PostCSS</a></li><li><a href="#a-modern-css-reset">A modern CSS reset</a></li><li><a href="#baselayer%E2%80%99s-built-in-accessibility-features">Baselayer’s built-in accessibility features</a><ul><li><a href="#(1.)-focus-states">(1.) Focus states</a></li><li><a href="#(2.)-the-visually-hidden-class">(2.) The visually-hidden class</a></li></ul></li></ul>
       </nav>
           </nav>
         </div>
         <div class="lg:col-span-3">
           <main id="article-content" class="content-grid">
             <h2 id="introduction" tabindex="-1">Introduction</h2>
-<p class="t-lg">Designed as a good place to start, Baselayer may be all you need for small projects such as static websites and blogs. Or you may use it as a <em>baselayer</em> to quick-start your mega project.</p>
-<p>Ready to use as-is, Baselayer’s 24 KB (minified) stylesheet gives you all this:</p>
+<p class="t-lg">Conçu comme un bon point de départ, Baselayer peut être tout ce dont vous avez besoin pour les petits projets tels que les sites Web statiques et les blogs. Ou vous pouvez l'utiliser comme <em>baselayer</em> pour démarrer rapidement votre méga projet.</p>
+
+<p>Prêt à être utilisé tel quel, la feuille de style 24 Ko (minifiée) de Baselayer vous donne tout cela :</p>
 <ul>
-<li>A modern CSS reset</li>
-<li>Minimalist styled classless typographic, and form elements</li>
-<li>Reliable accessibility features for assistive technology users</li>
-<li>A lightweight system of utility classes for controlling dimensions, positioning, spacing, borders, text, and images</li>
-<li><code>@container</code> query responsive layout utilities using CSS grid and flexbox</li>
-<li>Responsive typography, layout, and spacing using <code>clamp()</code> ramps</li>
-<li>A compact color lightness system based on <code>color-mix(in OKLCH)</code> for text, borders, and backgrounds</li>
-<li>Built-in dark mode using <code>light-dark()</code></li>
-<li>Theming control using CSS variables</li>
-<li>And more</li>
+<li>Une réinitialisation CSS moderne</li>
+<li>Typographie sans classe de style minimaliste et éléments de forme</li>
+<li>Fonctionnalités d'accessibilité fiables pour les utilisateurs de technologies d'assistance</li>
+<li>Un système léger de classes d'utilité pour contrôler les dimensions, le positionnement, l'espacement, les bordures, le texte et les images</li>
+<li>Requêtes <code>@container query</code> utilitaires de mise en page réactive à l'aide de la grille CSS et de la boîte flexible</li>
+<li>Typographie, mise en page et espacement réactifs à l'aide de fonctions <code>clamp()</code></li>
+<li>Un système compact de luminosité des couleurs basé sur <code>color-mix(in OKLCH)</code> pour le texte, les bordures et les arrière-plans</li>
+<li>Mode sombre intégré utilisant <code>light-dark()</code></li>
+<li>Contrôle de thématisation à l'aide de variables CSS</li>
+<li>Et plus…</li>
 </ul>
-<h2 id="modern-css-technologies" tabindex="-1">Modern CSS technologies</h2>
-<p>Baselayer supports only up-to-date (2023 forward) <a href="https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility">baseline compatibility</a> web browsers (Safari, Firefox, Chrome, Edge, etc.). Such as:</p>
+<h2 id="modern-css-technologies" tabindex="-1">Technologies CSS modernes</h2>
+<p>Supports de la couche de base (<em>baseline</em>) uniquement à jour (2023 en avant) <a href="https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility"> compatibilité de base</a> pour les navigateurs (Safari, Firefox, Chrome, Edge, etc.). Such as:</p>
 <ul>
 <li><a href="https://caniuse.com/css-container-queries">Container queries (inline-size)</a></li>
 <li><a href="https://caniuse.com/css-grid">CSS Grid</a></li>
@@ -428,22 +430,22 @@ window.addEventListener("DOMContentLoaded", () => {
 <li><a href="https://caniuse.com/css-cascade-layers">Cascade layers</a></li>
 </ul>
 <h2 id="baselayer%E2%80%99s-design-philosophy" tabindex="-1">Baselayer’s design philosophy</h2>
-<p>The design philosophy behind the Baselayer CSS project is as follows:</p>
+<p>La philosophie de conception derrière le projet Baselayer CSS est la suivante :</p>
 <ul>
-<li>Aim at being a good place to start — a <em>baselayer</em> for a web design project.</li>
-<li>Being so small (24 KB), there’s less you need to overwrite in order to style it your own way (and most things in Baselayer can be restyled by CSS variables). So, there’s no need for a purge process to remove a heavy payload of unused Baselayer styles.</li>
+<li>Visez à être un bon point de départ - un <em>baselayer</em> pour un projet de conception Web.</li>
+<li>Étant si petit (24 Ko), il y a moins que vous devez surcharger afin de le styliser à votre façon (et la plupart des choses dans Baselayer peuvent être surchargés par des variables CSS). Ainsi, il n'y a pas besoin de pré-processurs pour supprimer une lourde charge utile de styles Baselayer inutilisés.</li>
 <li>PostCSS only — no preprocessors.</li>
 </ul>
-<h2 id="built-using-postcss" tabindex="-1">Built using PostCSS</h2>
-<p>Baselayer is built using <a href="https://postcss.org">PostCSS</a> and some plugins. The plugins used by Baselayer are:</p>
+<h2 id="built-using-postcss" tabindex="-1">Construit en utilisant PostCSS</h2>
+<p>Baselayer est construit en utilisant <a href="https://postcss.org">PostCSS</a> et quelques plugins. Les plugins utilisés par Baselayer sont :</p>
 <ul>
-<li><a href="https://github.com/postcss/postcss-import">postcss-import</a> — so that Baselayer could be built from separate CSS files</li>
-<li><a href="https://cssnano.co">cssnano</a> — to remove comments and minify the output <code>baselayer.min.css</code></li>
+<li><a href="https://github.com/postcss/postcss-import">postcss-import</a> — afin que Baselayer puisse être construit à partir de fichiers CSS séparés</li>
+<li><a href="https://cssnano.co">cssnano</a> — pour supprimer les commentaires et réduire la taille du fichier <code>baselayer.min.css</code></li>
 </ul>
-<p><strong>Note:</strong> neither <a href="https://preset-env.cssdb.org">postcss-preset-env</a> nor <a href="https://github.com/postcss/autoprefixer">autoprefixer</a> have been used in Baselayer. And preprocessors such as Sass, Less, Stylus etc. are not required.</p>
-<h2 id="a-modern-css-reset" tabindex="-1">A modern CSS reset</h2>
-<p>The Baselayer reset is a “best of both” combination of <a href="https://www.joshwcomeau.com/css/custom-css-reset/">Josh W Comeau’s custom CSS reset</a> and <a href="https://andy-bell.co.uk/a-more-modern-css-reset/">Andy Bell’s (more) modern CSS reset”</a>.</p>
-<p>From that basis, Baselayer then takes care of the basics by setting some minimalist, easy-to-read typography, and styles for buttons and forms.</p>
+<p><strong>Note:</strong> ni <a href="https://preset-env.cssdb.org">postcss-preset-env</a> ni <a href="https://github.com/postcss/autoprefixer">autoprefixer</a> ont été utilisés dans Baselayer. Et les préprocesseurs tels que Sass, Less, Stylus, etc. ne sont pas nécessaires.</p>
+<h2 id="a-modern-css-reset" tabindex="-1">Une réinitialisation CSS moderne</h2>
+<p>La réinitialisation de Baselayer est une combinaison du « meilleur des deux » de <a href="https://www.joshwcomeau.com/css/custom-css-reset/"> <em>Custom CSS reset</em> de Josh W Comeau</a> et <a href="https://andy-bell.co.uk/a-more-modern-css-reset/">d’Andy Bell <em>(more) modern CSS reset</em></a>.</p>
+<p>Sur cette base, Baselayer s'occupe ensuite des bases en définissant une typographie et des styles minimalistes et faciles à lire pour les boutons et les formulaires.</p>
 <h2 id="baselayer%E2%80%99s-built-in-accessibility-features" tabindex="-1">Baselayer’s built-in accessibility features</h2>
 <p>Baselayer has two “must have” accessibility features built-in.</p>
 <h3 id="(1.)-focus-states" tabindex="-1">(1.) Focus states</h3>
