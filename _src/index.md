@@ -1,6 +1,6 @@
 ---
-title: Getting started
-mainHeading: Getting started with Baselayer
+title: Commencer
+mainHeading: Premiers pas avec Baselayer
 layout: base.njk
 nextPage: "/typography/"
 nextLink: "Typography"
@@ -8,24 +8,33 @@ nextLink: "Typography"
 
 ## Introduction
 
-<p class="t-lg">Designed as a good place to start, Baselayer may be all you need for small projects such as static websites and blogs. Or you may use it as a <em>baselayer</em> to quick-start your mega project.</p>
+<p class="t-lg">Conçu comme un bon point de départ, Baselayer peut être tout ce dont vous avez besoin pour les petits projets tels que les sites Web statiques et les blogs. Ou vous pouvez l'utiliser comme <em>baselayer</em> pour démarrer rapidement votre méga projet.</p>
 
-Ready to use as-is, Baselayer’s {{ metadata.filesize }} (minified) stylesheet gives you all this:
+Prêt à être utilisé tel quel, la feuille de style {{ metadata.filesize }} (minifiée) de Baselayer vous donne tout cela :
 
-* A modern CSS reset
-* Minimalist styled classless typographic, and form elements
-* Reliable accessibility features for assistive technology users
-* A lightweight system of utility classes for controlling dimensions, positioning, spacing, borders, text, and images
-* `@container` query responsive layout utilities using CSS grid and flexbox
-* Responsive typography, layout, and spacing using `clamp()` ramps
-* A compact color lightness system based on `color-mix(in OKLCH)` for text, borders, and backgrounds
-* Built-in dark mode using `light-dark()`
-* Theming control using CSS variables
-* And more
+* Une réinitialisation CSS moderne
 
-## Modern CSS technologies
+* Éléments typographiques et de forme sans classe de style minimaliste
 
-Baselayer supports only up-to-date (2023 forward) [baseline compatibility](https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility) web browsers (Safari, Firefox, Chrome, Edge, etc.). Such as:
+* Fonctionnalités d'accessibilité fiables pour les utilisateurs de technologies d'assistance
+
+* Un système léger de classes utilitaires pour contrôler les dimensions, le positionnement, l'espacement, les bordures, le texte et les images
+
+* `@container` interroge les utilitaires de mise en page réactifs à l'aide de la grille CSS et de la flexbox
+
+* Typographie, mise en page et espacement réactifs à l'aide des rampes `clamp()`
+
+* Un système compact de luminosité des couleurs basé sur `color-mix(in OKLCH)` pour le texte, les bordures et les arrière-plans
+
+* Mode sombre intégré utilisant `light-dark()`
+
+* Contrôle de thématisation à l'aide de variables CSS
+
+* Et plus encore
+
+## Technologies CSS modernes
+
+Baselayer ne prend en charge que les navigateurs Web à jour (2023 à partir de) [compatibilité de base](https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility) (Safari, Firefox, Chrome, Edge, etc.). Tels que :
 
 * [Container queries (inline-size)](https://caniuse.com/css-container-queries)
 * [CSS Grid](https://caniuse.com/css-grid)
@@ -36,56 +45,61 @@ Baselayer supports only up-to-date (2023 forward) [baseline compatibility](https
 * [CSS class nesting](https://caniuse.com/css-nesting)
 * [Cascade layers](https://caniuse.com/css-cascade-layers)
 
-## Baselayer’s design philosophy
+## La philosophie de conception de Baselayer
 
-The design philosophy behind the Baselayer CSS project is as follows:
+La philosophie de conception derrière le projet Baselayer CSS est la suivante :
 
-* Aim at being a good place to start — a _baselayer_ for a web design project.
-* Being so small ({{ metadata.filesize }}), there’s less you need to overwrite in order to style it your own way (and most things in Baselayer can be restyled by CSS variables). So, there’s no need for a purge process to remove a heavy payload of unused Baselayer styles.
-* PostCSS only — no preprocessors.
+* Visez à être un bon point de départ - une _couche de base_ pour un projet de conception Web.
 
-## Built using PostCSS
+* Étant si petit ({{ metadata.filesize }}), il y a moins que vous devez écraser afin de le styliser à votre façon (et la plupart des choses dans Baselayer peuvent être remodelées par des variables CSS). Ainsi, il n'y a pas besoin d'un processus de purge pour supprimer une lourde charge utile de styles Baselayer inutilisés.
 
-Baselayer is built using [PostCSS](https://postcss.org) and some plugins. The plugins used by Baselayer are:
+* PostCSS uniquement - pas de préprocesseurs.
 
-* [postcss-import](https://github.com/postcss/postcss-import) — so that Baselayer could be built from separate CSS files
-* [cssnano](https://cssnano.co) — to remove comments and minify the output `baselayer.min.css`
+## Construit à l'aide de PostCSS
 
-**Note:** neither [postcss-preset-env](https://preset-env.cssdb.org) nor [autoprefixer](https://github.com/postcss/autoprefixer) have been used in Baselayer. And preprocessors such as Sass, Less, Stylus etc. are not required.
+Baselayer est construit à l'aide de [PostCSS](https://postcss.org) et de certains plugins. Les plugins utilisés par Baselayer sont :
 
-## A modern CSS reset
+* [Postcss-import](https://github.com/postcss/postcss-import) - afin que Baselayer puisse être construit à partir de fichiers CSS séparés
 
-The Baselayer reset is a “best of both” combination of [Josh W Comeau’s custom CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/) and [Andy Bell’s (more) modern CSS reset”](https://andy-bell.co.uk/a-more-modern-css-reset/).
+* [Cssnano](https://cssnano.co) - pour supprimer les commentaires et réduire la sortie `baselayer.min.css`
 
-From that basis, Baselayer then takes care of the basics by setting some minimalist, easy-to-read typography, and styles for buttons and forms.
+**Remarque :** ni [postcss-preset-env](https://preset-env.cssdb.org) ni [autoprefixer](https://github.com/postcss/autoprefixer) n'ont été utilisés dans Baselayer. Et les préprocesseurs tels que Sass, Less, Stylus, etc. ne sont pas nécessaires.
 
-## Baselayer’s built-in accessibility features
+## Une réinitialisation CSS moderne
 
-Baselayer has two “must have” accessibility features built-in.
+La réinitialisation de la couche de base est une combinaison "meilleure des deux" de [réinitialisation CSS personnalisée de Josh W Comeau](https://www.joshwcomeau.com/css/custom-css-reset/) et [réinitialisation CSS (plus) moderne d'Andy Bell](https://andy-bell.co.uk/a-more-modern-css-reset/).
 
-### (1.) Focus states
+Sur cette base, Baselayer s'occupe ensuite des bases en définissant une typographie et des styles minimalistes et faciles à lire pour les boutons et les formulaires.
 
-After experimenting and testing various focus state styles, I have decided to base Baselayer’s on the ones in the UK National Health Service [NHS.uk design system](https://design-system.service.gov.uk/get-started/focus-states/) and the UK Government [GOV.UK design system](https://design-system.service.gov.uk/get-started/focus-states/).
+## Fonctionnalités d'accessibilité intégrées de Baselayer
 
-1. Links receive an amber background, black text and a thick black underline on `:focus-visible` — so that the element is clearly visible in a wide range of contexts.
+Baselayer a deux fonctionnalités d'accessibilité "indispensables" intégrées.
 
-2. Interacive elements such as form inputs, form buttons, collapsible details, and elements with overflowing content have what looks like a yellow and black “double border” that appears on `:focus` (actually its created by an outline and a box shadow).
+### (1,) États de mise au point
 
-**Note:** A `<button>` that is not within a `<form>`, and a `<button type="button">` will not receive the `:focus` ring (but it will receive the ring on `:focus-visible`). Ths is true for most browsers except Safari: Safari does not show `:focus` rings on buttons, and it does not place tabbing focus on overflowing elements, or on the color-picker input.
+Après avoir expérimenté et testé divers styles d'état de mise au point, j'ai décidé de baser ceux du service national de santé britannique [système de conception NHS.uk](https://design-system.service.gov.uk/get-started/focus-states/) et du gouvernement britannique [système de conception GOV.UK](https://design-system.service.gov.uk/get-started/focus-states/).
 
-These focus states are visible on a wide range of colored backgrounds, in both light and dark themes. (See also [colors and accessibility]({{ "/colors/#colors-and-accessibility" | url }}).) A z-index raise has been added to prevent the focus ring tucking under a neighbouring item, e.g. in input/button groups.
+1. Les liens reçoivent un fond ambré, un texte noir et un soulignement noir épais sur `:focus-visible` - de sorte que l'élément est clairement visible dans un large éventail de contextes.
 
-Examples:
+2. Les éléments interactifs tels que les entrées de formulaire, les boutons de formulaire, les détails pliables et les éléments avec un contenu débordant ont ce qui ressemble à une "double bordure" jaune et noire qui apparaît sur `:focus` (en fait, il est créé par un contour et une ombre de boîte).
+
+**Note:** Un `<button>` qui ne se trouve pas dans un `<form>`, et un `<button type="button">` ne recevront pas l'anneau `:focus` (mais il recevra l'anneau sur `:focus-visible`). C'est vrai pour la plupart des navigateurs, à l'exception de Safari : Safari n'affiche pas les anneaux `:focus` sur les boutons, et il ne place pas l'accent sur les éléments débordants, ni sur l'entrée du sélecteur de couleurs.
+
+Ces états de mise au point sont visibles sur un large éventail d'arrière-plans colorés, dans des thèmes clairs et sombres. (Voir aussi [couleurs et accessibilité]({{ "/colors/#colors-and-accessibility" | url }}).) Une augmentation de l'indice z a été ajoutée pour empêcher l'anneau de mise au point de se replier sous un élément voisin, par exemple dans les groupes d'entrée/boutons.
+
+Exemples:
 
 <form class="my-3">
   <fieldset class="flex">
-    <legend>Example e-newsletter subscribe</legend>
-    <input class="w-100%" type="email" id="example-input-email" placeholder="Enter email">
+    <legend>Exemple d'abonnement à une lettre d'information électronique</legend>
+    <input class="w-100%" type="email" id="example-input-email" placeholder="Votre email">
     <input type="submit" name="submit" value="Subscribe">
   </fieldset>
 </form>
 
-Keyboard-tab through these links and buttons to see the focus rings:
+
+Utilisez la touche TAB de votre clavier pour afficher le focus de ces liens et boutons :
+
 
 <div class="my-3 b-thin">
   <div class="grid sm:equal-4-cols">
@@ -108,19 +122,19 @@ Keyboard-tab through these links and buttons to see the focus rings:
   </div>
 </div>
 
-### (2.) The `visually-hidden` class
+### (2.) La classe `visually-hidden` 
 
-The `visually-hidden` is used to provide additional content for screen-readers, for improved accessibility. For example, it is best practice to have “skip link” above the top navigation bar on your website, but have it (visually) hidden for ably sighted users.
+La classe `visually-hidden` est utilisée pour fournir du contenu supplémentaire aux lecteurs d'écran, pour une meilleure accessibilité. Par exemple, il est préférable d'avoir "sauter le lien" au-dessus de la barre de navigation supérieure de votre site Web, mais de le cacher (visuellement) pour les utilisateurs malvoyants.
 
 ```
 <a href="#main-content"
   tabindex="1"
   class="block p-2 visually-hidden"
 >
-  Skip to page content
+  Passer au contenu de la page
 </a>
 
-<!-- Logo and site navigation menu here -->
+<!-- Logo et menu de navigation du site ici -->
 
 <div id="main-content">
   ...
