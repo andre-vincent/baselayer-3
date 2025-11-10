@@ -28,9 +28,9 @@ Prêt à l'emploi tel quel, Baselayer vous donne tout cela :
 
 Baselayer utilise des technologies CSS modernes telles que `grid`, des fonctions (par exemple `clamp()`, `color-mix()`, `light-dark()`), `var()` propriétés personnalisées et l'imbrication de classe CSS. Par conséquent, il ne prend en charge que les navigateurs Web [Basline : largement disponible](https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility) (mi-2023) tels que Safari, Firefox, Chrome, Edge, etc.
 
-**Documentation :** [https://simonpadbury.github.io/baselayer-3/](https://simonpadbury.github.io/baselayer-3/)
+**Documentation :** [https://simonpadbury.github.io/baselayer-3/](https://andre-vincent.github.io/baselayer-3/)
 
-**Changelog :** [https://github.com/SimonPadbury/baselayer-3/blob/main/README.md](https://github.com/baselayer/blob/main/CHANGELOG.md)
+**Changelog :** [https://github.com/andre-vincent/baselayer-3/blob/main/README.md](https://github.com/baselayer/blob/main/CHANGELOG.md)
 
 ---
 
